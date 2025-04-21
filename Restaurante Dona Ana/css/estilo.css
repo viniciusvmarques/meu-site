@@ -185,6 +185,11 @@ hr {
     padding: 10px;
     color: #ffb347;
 }
+#cardapiolateral li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
 
 #cardapiolateral ul {
     list-style: none;
