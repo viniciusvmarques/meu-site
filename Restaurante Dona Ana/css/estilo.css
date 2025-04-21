@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Titillium Web", "sans-serif";
+    background: linear-gradient(to left, #4c5368, #f4ede1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    background: url(../img/f.png);
+    display: block;
+    background-size: cover;
+}
+
+#logo h1 {
+    text-indent: -9999px;
+}
+
+header nav {
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+    right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+header nav ul li a {
+    color: #e8e4e3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header nav ul li a:visited {
+    color: #e8e4e3;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:active {
+    color: #ffb347;
+}
+
+header nav ul li a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* corpo */
+
+#conteudo {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#caixa1 {
+    width: 720px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.img-cardapio {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#caixa4 {
+    width: 720px;
+    margin-top: 20px;
+    height: 527px;
+    background: whitesmoke;
+    background-size: contain;
+}
+
+#conteudo1 h2 {
+    margin-left: 20px;
+    padding: 10px;
+    color: #ffb347;
+}
+
+#conteudo1 p {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ada484;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.linha-decorativa {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ffb347, transparent);
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.linha-decorativa::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ffb347;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.imagem {
+    display: block;
+    margin: 20px auto;
+    border: 6px solid #f4ede1;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagem:hover {
+    transform: scale(1.02);
+}
+
+#cardapiolateral {
+    margin-top: 20px;
+    width: 340px;
+    background: whitesmoke;
+}
+
+#cardapiolateral h1 {
+    text-align: center;
+    padding: 10px;
+    color: #ffb347;
+}
+
+#cardapiolateral ul {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+#cardapiolateral ul li a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 7px 8px;
+    color: #4c5368;
+    text-decoration: none;
+}
+
+#cardapiolateral ul li a:visited {
+    color: #4c5368;
+}
+
+#cardapiolateral ul li a:hover {
+    color: #ada484;
+    background-color: #e8e4e3;
+    border-radius: 5px;
+}
+
+#cardapiolateral hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #e8e4e3, #ffb347, #e8e4e3);
+    width: 80%;
+    margin: 12px auto;
+    border-radius: 4px;
+    opacity: 0.7;
+}
+
+#delivery {
+    background-color: whitesmoke;
+    display: block;
+    margin-top: 20px;
+}
+
+#delivery h2 {
+    text-align: center;
+    color: #ffb347;
+    padding: 10px;
+}
+
+#delivery p {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: whitesmoke;
+    display: block;
+    margin-top: 20px;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.ativo {
+    color: #fff !important;
+    background-color: #ffb347;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    #container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    #logo {
+        background-size: cover;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+
+    #conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #caixa1,
+    #caixa4 {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+    }
+
+    #cardapiolateral {
+        width: 100%;
+    }
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    max-width: 100px;  /* Ajuste o tamanho máximo do logo conforme necessário */
+    height: auto;
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* CSS para o ajuste da imagem do cardápio (já está bom) */
+.img-cardapio {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
